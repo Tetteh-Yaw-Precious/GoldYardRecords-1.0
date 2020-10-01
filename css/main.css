@@ -112,10 +112,10 @@ span{
 }
 .about,.our-services{
     margin: 4rem 0rem;
-    text-align: center;
 }
 .about h1,.our-services h1{
     font-weight: 300;
+    text-align: center;
 }
 .about p,.our-services p{
     margin: 0rem 5rem;
@@ -129,8 +129,9 @@ span{
         position: relative;
         top: 0.4em;
 }
-.our-services p{
+.our-services .here-at{
     margin: 2rem 0rem;
+    text-align: center;
 }
 .flyer-checklist{
     border: 1px solid red;
@@ -143,4 +144,12 @@ span{
 }
 .checklist{
     border: 1px solid red;
+    margin-top: 4rem;
+}
+.checklist img{
+    width: 3rem;
+    height:3rem;
+}
+.recording{
+    display: inline-flex;
 }
