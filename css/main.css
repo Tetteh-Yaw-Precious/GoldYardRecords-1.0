@@ -59,6 +59,7 @@ a{
     font-weight: 500;
 }
 /*NAVIGATION BAR*/
+/*BANNER*/
 .banner{
     width: 100%;
     min-height: 89vh;
@@ -110,6 +111,8 @@ span{
     bottom: 3rem;
     color: black;
 }
+/*BANNER*/
+/*ABOUT & OUR SERVICES*/
 .about,.our-services{
     margin: 4rem 0rem;
 }
@@ -134,7 +137,6 @@ span{
     text-align: center;
 }
 .flyer-checklist{
-    border: 1px solid red;
     min-height: 90vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -143,13 +145,43 @@ span{
     width: 70%;
 }
 .checklist{
-    border: 1px solid red;
-    margin-top: 4rem;
+    margin-left: 7rem;
+    margin-top: 2.5rem;
 }
 .checklist img{
-    width: 3rem;
-    height:3rem;
+    width: 2.5rem;
+    height:2.5rem;
+    margin: 1rem;
+}
+.checklist p{
+    margin: 1rem 0rem;
 }
 .recording{
     display: inline-flex;
 }
+/*ABOUT & OUR SERVICES*/
+/*CONTACT-US*/
+.contact-us{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 4rem;
+    min-height: 50vh;
+}
+.contact-logo{
+    border: 1px solid red;
+}
+.contact-address1{
+    border: 1px solid green;
+}
+.contact-address2{
+    border: 1px solid cyan;
+}
+/*CONTACT-US*/
+/*FOOTER*/
+.footer{
+    border: 1px solid violet;
+    min-height: 10vh;
+}
+/*FOOTER*/
+
+
