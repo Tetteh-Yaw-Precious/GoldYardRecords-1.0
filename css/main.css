@@ -1,213 +1,372 @@
-/*GLOBAL STYLING*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-:root{
-    --primary-color: #FCD200;
-    --primary-font: 'Montserrat', sans-serif;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-hr{
-    background: var(--primary-color);
-    min-height: 0.1rem;
-    margin: 0rem 35rem;
-    position: relative;
-    bottom: 1em;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*MEDIA QUERIES*/
+:root {
+  --primary-color: #FCD200;
+  --primary-font: 'Montserrat', sans-serif;
 }
 
-a{
-    color: black !important;
+html {
+  scroll-behavior: smooth;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+hr {
+  background: var(--primary-color);
+  min-height: 0.1rem;
+  margin: 0rem 35rem;
+  position: relative;
+  bottom: 1em;
+}
+
+@media (max-width: 500px) {
+  hr {
+    margin: 0 0;
+    position: none;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+a {
+  color: black !important;
+  scroll-behavior: smooth;
+}
+
 /*GLOBAL STYLING*/
 /*NAVIGATION BAR*/
+.navigation-bar {
+  position: -webkit-sticky !important;
+}
+
 .navigation-bar .navbar-brand {
-    margin-left: 4rem;
+  margin-left: 4rem;
 }
-.navigation-bar .navbar-brand img{
-    width: 3.2rem;
-    height: 3rem;
+
+.navigation-bar .navbar-brand img {
+  width: 3.2rem;
+  height: 3rem;
 }
-.navbar-nav li a{
-    margin-left: 1rem;
-    transition: 0.3ms ease-in-out;
-    font-size: 1rem;
-    padding: 0.5rem 2rem !important;
-    cursor: pointer;
+
+.navbar-nav li a {
+  margin-left: 1rem;
+  -webkit-transition: 0.3ms ease-in-out;
+  transition: 0.3ms ease-in-out;
+  font-size: 1rem;
+  padding: 0.5rem 2rem !important;
+  cursor: pointer;
 }
-.navbar li a:hover{
-    background: black;
-    color: white !important;
-    margin-left: 1rem;
-    transition: 0.3ms ease-in;
-    border-radius: 1.5rem;
+
+.navbar li a:hover {
+  background: black;
+  color: white !important;
+  margin-left: 1rem;
+  -webkit-transition: 0.3ms ease-in;
+  transition: 0.3ms ease-in;
+  border-radius: 1.5rem;
 }
-.follow-us{
-    display: inline-flex;
-    position: relative;
-    top: 0.5rem;
+
+.follow-us {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  top: 0.5rem;
 }
-.follow-us a{
-    margin-left: 0.8rem;
+
+.follow-us a {
+  margin-left: 0.8rem;
 }
-.follow-us a img{
-    width: 1.5rem;
-    height: 1.5rem;
+
+.follow-us a img {
+  width: 1.5rem;
+  height: 1.5rem;
 }
-.follow-us p{
-    font-weight: 500;
+
+.follow-us p {
+  font-weight: 500;
 }
+
 /*NAVIGATION BAR*/
 /*BANNER*/
-.banner{
-    width: 100%;
-    min-height: 89vh;
-    background: url(/assets/background\ image.jpg);
-    background-size: cover;
-    background-repeat: none;
+/*MEDIA QUERIES*/
+.banner {
+  width: 100%;
+  height: 89vh;
+  background: url(/assets/background-image.jpg);
+  background-size: cover;
+  background-repeat: none;
 }
-.welcome-text{
-    background: url(/assets/welcome\ text\ background.svg);
-    background-size: cover;
-    background-repeat: none;
+
+@media (max-width: 500px) {
+  .banner {
     background-position: center;
-    min-height: 89vh;
+    background-repeat: no-repeat;
+    height: 50vh;
+  }
 }
-span{
-    color: var(--primary-color);
+
+.welcome-text {
+  background: url(/assets/welcome-text-background.svg);
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  height: 89vh;
 }
-.text{
-    width: 50%;
+
+@media (max-width: 500px) {
+  .welcome-text {
+    background-size: 100%;
+    width: 100%;
+    background-position: cover;
+    margin-top: auto;
+    height: 50vh;
+  }
+}
+
+span {
+  color: var(--primary-color);
+}
+
+.text {
+  width: 50%;
+  position: relative;
+  top: 14rem;
+  left: 20rem;
+}
+
+@media (max-width: 500px) {
+  .text {
+    width: 100%;
     position: relative;
-    top: 14rem;
-    left: 20rem;
+    top: 3rem;
+    left: 0;
+    text-align: center;
+  }
 }
-.text h1{
-    color: white;
+
+.text h1 {
+  color: white;
 }
-.welcome-to{
-    font-size: 1.6rem;
-    font-weight: 300;
-    position: relative;
-    color: white;
-    word-spacing: 0.4rem;
-    left: 13rem;
-    bottom: 1rem;
+
+.welcome-to {
+  font-size: 1.6rem;
+  font-weight: 300;
+  position: relative;
+  color: white;
+  word-spacing: 0.4rem;
+  left: 13rem;
+  bottom: 1rem;
 }
-.goldyardrecord{
-    position: relative;
-    font-weight: 800;
-    font-size: 5rem;
-    left: 2rem;
-    bottom: 2rem;
-}
-.pamper-your-ears{
+
+@media (max-width: 500px) {
+  .welcome-to {
+    position: none;
+    width: 100%;
+    left: 0rem;
+    bottom: 0rem;
+    position: none;
     font-size: 2rem;
-    font-weight: 300;
-    position: relative;
-    word-spacing: 0.5rem;
-    left: 1rem;
-    bottom: 3rem;
-    color: black;
+    text-align: center;
+  }
 }
+
+.goldyardrecord {
+  position: relative;
+  font-weight: 800;
+  font-size: 5rem;
+  left: 2rem;
+  bottom: 2rem;
+}
+
+@media (max-width: 500px) {
+  .goldyardrecord {
+    position: none;
+    text-align: center;
+    left: 0px;
+    bottom: 0px;
+    font-size: 2.5rem;
+    font-weight: bolder;
+  }
+}
+
+.pamper-your-ears {
+  font-size: 2rem;
+  font-weight: 300;
+  position: relative;
+  word-spacing: 0.5rem;
+  left: 1rem;
+  bottom: 3rem;
+  color: black;
+}
+
+@media (max-width: 500px) {
+  .pamper-your-ears {
+    position: none;
+    text-align: center;
+    font-size: 1.5rem;
+    left: 0rem;
+    bottom: 0rem;
+  }
+}
+
 /*BANNER*/
+/*MEDIA QUERIES*/
 /*ABOUT & OUR SERVICES*/
-.about,.our-services{
-    margin: 4rem 0rem;
-}
-.about h1,.our-services h1,.contact-us-header h1{
-    font-weight: 300;
-    text-align: center;
-}
-.about p,.our-services p{
-    margin: 0rem 5rem;
-    font-size: 1.2rem;
-    font-weight: 300;
-}
-.our-services hr{
-        background: var(--primary-color);
-        min-height: 0.1rem;
-        margin: 0rem 35rem;
-        position: relative;
-        top: 0.4em;
-}
-.our-services .here-at{
-    margin: 2rem 0rem;
-    text-align: center;
-}
-.flyer-checklist{
-    min-height: 90vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.flyer{
-    width: 70%;
-}
-.checklist{
-    margin-left: 7rem;
-    margin-top: 2.5rem;
-}
-.checklist img{
-    width: 2.5rem;
-    height:2.5rem;
-    margin: 1rem;
-}
-.checklist p{
-    margin: 1rem 0rem;
-}
-.recording{
-    display: inline-flex;
-}
-/*ABOUT & OUR SERVICES*/
-/*CONTACT-US*/
-.contact-us-header{
-    position: relative;
-    top: 4rem;
-    text-align: center;
-}
-.contact-us{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    min-height: 30vh;
-}
-.contact-logo{
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 400px;
+.about, .our-services {
+  margin: 4rem 0rem;
 }
 
-.contact-logo a img{
-    width: 12rem;
-    padding: 2rem;
+.about h1, .our-services h1, .contact-us-header h1 {
+  font-weight: 300;
+  text-align: center;
 }
-.contact-address1{
-    text-align: center;
+
+.about p, .our-services p {
+  margin: 0rem 5rem;
+  font-size: 1.2rem;
+  font-weight: 300;
 }
-.con-whatsapp,.loc-mail{
-    margin-top: 3rem;
+
+.our-services hr {
+  background: var(--primary-color);
+  min-height: 0.1rem;
+  margin: 0rem 35rem;
+  position: relative;
+  top: 0.4em;
 }
-.con-whatsapp img,.loc-mail img{
-    width: 4rem;
-    padding: 1rem;
+
+@media (max-width: 500px) {
+  .our-services hr {
+    margin: 0 0;
+    position: none;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
-.con-whatsapp p,.loc-mail p{
-    padding: 1rem 0 0 0;
+
+.our-services .here-at {
+  margin: 2rem 0rem;
+  text-align: center;
 }
-.loc-mail{
-    margin-left: 4rem;
+
+.flyer-checklist {
+  min-height: 90vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
+
+@media (max-width: 500px) {
+  .flyer-checklist {
+    display: block;
+  }
+}
+
+.flyer {
+  width: 70%;
+}
+
+@media (max-width: 500px) {
+  .flyer {
+    width: 100%;
+  }
+}
+
+.checklist {
+  margin-left: 5rem;
+  margin-top: 2.5rem;
+}
+
+.checklist img {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin: 1rem;
+}
+
+.checklist p {
+  margin: 1rem 0rem;
+}
+
+.recording {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+/*ABOUT & OUR SERVICES*/
+/*MEDIA QUERIES*/
+/*CONTACT-US*/
+.contact-us-header {
+  position: relative;
+  top: 4rem;
+  text-align: center;
+}
+
+.contact-us {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  min-height: 30vh;
+}
+
+@media (max-width: 500px) {
+  .contact-us {
+    display: block;
+  }
+}
+
+.contact-logo {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400px;
+}
+
+.contact-logo a img {
+  width: 12rem;
+  padding: 2rem;
+}
+
+.contact-address1 {
+  text-align: center;
+}
+
+.con-whatsapp, .loc-mail {
+  margin-top: 3rem;
+}
+
+.con-whatsapp img, .loc-mail img {
+  width: 4rem;
+  padding: 1rem;
+}
+
+.con-whatsapp p, .loc-mail p {
+  padding: 1rem 0 0 0;
+}
+
+.loc-mail {
+  margin-left: 4rem;
+}
+
 /*CONTACT-US*/
 /*FOOTER*/
-.footer{
-    min-height: 10vh;
-    background: var(--primary-color);
-    text-align: center;
+.footer {
+  min-height: 10vh;
+  background: var(--primary-color);
+  text-align: center;
 }
-.footer p{
-    padding-top: 1.5rem;
-    font-size: 1rem;
+
+.footer p {
+  padding-top: 1.5rem;
+  font-size: 1rem;
 }
+
 /*FOOTER*/
-
-
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,104 @@
+/*BANNER*/
+@import './mediaqueries';
+.banner{
+    width: 100%;
+    height: 89vh;
+    background: url(/assets/background-image.jpg);
+    background-size: cover;
+    background-repeat: none;
+
+        @include mobile{
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 50vh;
+        }
+}
+.welcome-text{
+    background: url(/assets/welcome-text-background.svg);
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    height: 89vh;
+
+    @include mobile{
+        background-size: 100%;
+        width: 100%;
+        background-position: cover;
+        margin-top: auto;
+        height: 50vh;
+    }
+}
+span{
+    color: var(--primary-color);
+}
+.text{
+    width: 50%;
+    position: relative;
+    top: 14rem;
+    left: 20rem;
+
+    @include mobile{
+        width: 100%;
+        position: relative;
+        top: 3rem;
+        left: 0;
+        text-align: center;
+    }
+}
+.text h1{
+    color: white;
+}
+.welcome-to{
+    font-size: 1.6rem;
+    font-weight: 300;
+    position: relative;
+    color: white;
+    word-spacing: 0.4rem;
+    left: 13rem;
+    bottom: 1rem;
+
+        @include mobile{
+            position: none;
+            width: 100%;
+            left: 0rem;
+            bottom: 0rem;
+            position: none;
+            font-size: 2rem;
+            text-align: center;
+        }
+}
+.goldyardrecord{
+    position: relative;
+    font-weight: 800;
+    font-size: 5rem;
+    left: 2rem;
+    bottom: 2rem;
+
+    @include mobile{
+        position: none;
+        text-align: center;
+        left: 0px;
+        bottom: 0px;
+        font-size: 2.5rem;
+        font-weight: bolder;
+    }
+}
+.pamper-your-ears{
+    font-size: 2rem;
+    font-weight: 300;
+    position: relative;
+    word-spacing: 0.5rem;
+    left: 1rem;
+    bottom: 3rem;
+    color: black;
+
+    @include mobile{
+        position: none;
+        text-align: center;
+        font-size: 1.5rem;
+        left: 0rem;
+        bottom: 0rem;
+
+    }
+}
+/*BANNER*/

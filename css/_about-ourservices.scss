@@ -1,0 +1,64 @@
+@import './mediaqueries';
+/*ABOUT & OUR SERVICES*/
+.about,.our-services{
+    margin: 4rem 0rem;
+}
+.about h1,.our-services h1,.contact-us-header h1{
+    font-weight: 300;
+    text-align: center;
+}
+.about p,.our-services p{
+    margin: 0rem 5rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.our-services hr{
+        background: var(--primary-color);
+        min-height: 0.1rem;
+        margin: 0rem 35rem;
+        position: relative;
+        top: 0.4em;
+
+            @include mobile{
+                margin: 0 0;
+                position: none;
+                margin-left: 2rem;
+                margin-right: 2rem;
+            }
+}
+.our-services .here-at{
+    margin: 2rem 0rem;
+    text-align: center;
+}
+.flyer-checklist{
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @include mobile{
+        display: block;
+    }
+}
+.flyer{
+    width: 70%;
+
+    @include mobile{
+        width: 100%;
+    }
+}
+.checklist{
+    margin-left: 5rem;
+    margin-top: 2.5rem;
+}
+.checklist img{
+    width: 2.5rem;
+    height:2.5rem;
+    margin: 1rem;
+}
+.checklist p{
+    margin: 1rem 0rem;
+}
+.recording{
+    display: inline-flex;
+}
+/*ABOUT & OUR SERVICES*/

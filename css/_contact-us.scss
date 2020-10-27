@@ -1,0 +1,43 @@
+@import './mediaqueries';
+/*CONTACT-US*/
+.contact-us-header{
+    position: relative;
+    top: 4rem;
+    text-align: center;
+}
+.contact-us{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    min-height: 30vh;
+
+        @include mobile{
+            display: block;
+        }
+}
+.contact-logo{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400px;
+}
+
+.contact-logo a img{
+    width: 12rem;
+    padding: 2rem;
+}
+.contact-address1{
+    text-align: center;
+}
+.con-whatsapp,.loc-mail{
+    margin-top: 3rem;
+}
+.con-whatsapp img,.loc-mail img{
+    width: 4rem;
+    padding: 1rem;
+}
+.con-whatsapp p,.loc-mail p{
+    padding: 1rem 0 0 0;
+}
+.loc-mail{
+    margin-left: 4rem;
+}
+/*CONTACT-US*/

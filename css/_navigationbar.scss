@@ -1,0 +1,41 @@
+/*NAVIGATION BAR*/
+.navigation-bar{
+    position: -webkit-sticky !important;
+}
+.navigation-bar .navbar-brand {
+    margin-left: 4rem;
+}
+.navigation-bar .navbar-brand img{
+    width: 3.2rem;
+    height: 3rem;
+}
+.navbar-nav li a{
+    margin-left: 1rem;
+    transition: 0.3ms ease-in-out;
+    font-size: 1rem;
+    padding: 0.5rem 2rem !important;
+    cursor: pointer;
+}
+.navbar li a:hover{
+    background: black;
+    color: white !important;
+    margin-left: 1rem;
+    transition: 0.3ms ease-in;
+    border-radius: 1.5rem;
+}
+.follow-us{
+    display: inline-flex;
+    position: relative;
+    top: 0.5rem;
+}
+.follow-us a{
+    margin-left: 0.8rem;
+}
+.follow-us a img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.follow-us p{
+    font-weight: 500;
+}
+/*NAVIGATION BAR*/

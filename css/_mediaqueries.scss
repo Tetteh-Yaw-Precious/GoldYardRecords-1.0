@@ -1,0 +1,7 @@
+/*MEDIA QUERIES*/
+$mobile: 500px;
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content;
+    }
+}
